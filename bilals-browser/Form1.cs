@@ -27,6 +27,7 @@ namespace bilals_browser
             geschiedenis = new String[lengte_geschiedenis];
             //Begin value van array geschiedenis
             geschiedenis[teller_geschiedenis] = "https://google.com";
+            //Na het initialiseren komt er + 1 bij
             teller_geschiedenis += 1;          
         }
 
@@ -52,6 +53,9 @@ namespace bilals_browser
                     int lengte_geschiedenis_niew = lengte_geschiedenis += 1;
                     //Array geschiedenis word gerisized naar lengte_geschiedenis_nieuwe
                     Array.Resize<string>(ref geschiedenis, lengte_geschiedenis_niew);
+                    //plus 1 bij de geschiedenus en een extra value('geschiedenis')
+                    geschiedenis[teller_geschiedenis] = url_niewe;
+                    teller_geschiedenis += 1;
                     
 
 
