@@ -20,6 +20,8 @@ namespace bilals_browser
         public int teller_geschiedenis = 0;
         //Hoeveel terug
         public int hoeveel_terug = -1;
+        //Boolean die weet als het eerste keer is
+        public bool eerste_keer = true;
 
         public Form1()
         {
@@ -113,6 +115,7 @@ namespace bilals_browser
         //Als link knop word gelikt calback
         private void links_Click(object sender, EventArgs e)
         {
+             
             //vorige index
             String vorige_geschiedenis = geschiedenis[teller_geschiedenis-1];
             browser.Navigate(vorige_geschiedenis);
