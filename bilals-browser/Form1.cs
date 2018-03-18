@@ -26,9 +26,7 @@ namespace bilals_browser
             //Geschiedenis word 10 lang
             geschiedenis = new String[lengte_geschiedenis];
             //Begin value van array geschiedenis
-            geschiedenis[teller_geschiedenis] = "https://google.com";
-            //Na het initialiseren komt er + 1 bij
-            teller_geschiedenis += 1;          
+            geschiedenis[teller_geschiedenis] = "https://google.com";         
         }
 
 
@@ -111,7 +109,8 @@ namespace bilals_browser
         //Als link knop word gelikt calback
         private void links_Click(object sender, EventArgs e)
         {
-
+            //Huidigen index
+            Console.WriteLine("ik ben in: " + teller_geschiedenis);
         }
     }
 }
