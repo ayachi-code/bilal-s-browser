@@ -29,14 +29,20 @@ namespace bilals_browser
                 String url_naam = url.Text;
                 if (!(url_naam.Contains("http://") || url_naam.Contains("https://")))
                 {
+                    //Veranderd de url naar een string
                     String url_naam_string = url_naam.ToString();
-                    String url_niewe = "http://" + url_naam_string;           
+                    //De url krijgt een http:// bij
+                    String url_niewe = "http://" + url_naam_string;
+                    //Negeer error's
+                    browser.ScriptErrorsSuppressed = true;
+                    //Navigeer daar na toe
                     browser.Navigate(url_niewe);
       
                 }
                 else {
                     //Negeert error's
                     browser.ScriptErrorsSuppressed = true;
+                    //navigeer naar url.Text
                     browser.Navigate(url.Text);
                 }
             }
