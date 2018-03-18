@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.url = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.url = new System.Windows.Forms.TextBox();
             this.browser = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,15 @@
             this.panel1.Size = new System.Drawing.Size(812, 25);
             this.panel1.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(131, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "opnieuw";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // url
             // 
             this.url.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -58,16 +67,7 @@
             this.url.Size = new System.Drawing.Size(462, 22);
             this.url.TabIndex = 0;
             this.url.Text = "http://";
-            this.url.TextChanged += new System.EventHandler(this.url_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(131, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "opnieuw";
-            this.button1.UseVisualStyleBackColor = true;
+            this.url.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.url_KeyPress);
             // 
             // browser
             // 

@@ -17,9 +17,10 @@ namespace bilals_browser
             InitializeComponent();
         }
 
-        private void url_TextChanged(object sender, EventArgs e)
+      
+        private void url_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+          
         }
     }
 }
