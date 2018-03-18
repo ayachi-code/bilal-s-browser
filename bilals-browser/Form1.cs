@@ -43,7 +43,10 @@ namespace bilals_browser
                     browser.ScriptErrorsSuppressed = true;
                     //Navigeer daar na toe
                     browser.Navigate(url_niewe);
-                               
+                    //Voegt 1 toe aan array
+                    lengte_geschiedenis += 1;
+
+
                 }
                 else {
                     //Negeert error's
