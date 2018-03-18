@@ -15,9 +15,11 @@ namespace bilals_browser
         public Form1()
         {
             InitializeComponent();
+            browser.Navigate("https://google.com");
         }
 
-      
+
+     
         //Calback van een enter op de url balk
         private void url_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -26,6 +28,7 @@ namespace bilals_browser
             {
                 //Negeert error's
                 browser.ScriptErrorsSuppressed = true;
+                browser.Navigate(url.Text);
             }
         }
     }
