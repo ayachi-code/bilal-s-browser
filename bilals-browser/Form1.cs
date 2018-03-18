@@ -27,10 +27,15 @@ namespace bilals_browser
           if (e.KeyChar == (char)ConsoleKey.Enter)
             {
                 String url_naam = url.Text;
-
-                //Negeert error's
-                browser.ScriptErrorsSuppressed = true;
-                browser.Navigate(url.Text);
+                if (!(url_naam.Contains("http://") || url_naam.Contains("https")))
+                {
+                    MessageBox.Show("hooo");
+                }
+                else {
+                    //Negeert error's
+                    browser.ScriptErrorsSuppressed = true;
+                    browser.Navigate(url.Text);
+                }
             }
         }
     }
