@@ -18,9 +18,15 @@ namespace bilals_browser
         }
 
       
+        //Calback van een enter op de url balk
         private void url_KeyPress(object sender, KeyPressEventArgs e)
         {
-          
+          //Als iemand enter klikt
+          if (e.KeyChar == (char)ConsoleKey.Enter)
+            {
+                //Negeert error's
+                browser.ScriptErrorsSuppressed = true;
+            }
         }
     }
 }
