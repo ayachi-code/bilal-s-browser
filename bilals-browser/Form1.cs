@@ -45,9 +45,9 @@ namespace bilals_browser
                     browser.Navigate(url_niewe);
                     //Voegt 1 toe aan array
                     int lengte_geschiedenis_niew = lengte_geschiedenis += 1;
+                    //Array geschiedenis word gerisized naar lengte_geschiedenis_nieuwe
                     Array.Resize<string>(ref geschiedenis, lengte_geschiedenis_niew);
-                    Console.WriteLine(lengte_geschiedenis_niew);
-
+                    
 
 
                 }
