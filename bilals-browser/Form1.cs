@@ -65,7 +65,10 @@ namespace bilals_browser
                     browser.ScriptErrorsSuppressed = true;
                     //navigeer naar url.Text
                     browser.Navigate(url.Text);
-                    
+                    //plus 1 bij de geschiedenus en een extra value('geschiedenis')
+                    geschiedenis[teller_geschiedenis] = url.Text.ToString();
+                    teller_geschiedenis += 1;
+
                 }
             }
 
