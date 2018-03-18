@@ -44,7 +44,8 @@ namespace bilals_browser
                     //Navigeer daar na toe
                     browser.Navigate(url_niewe);
                     //Voegt 1 toe aan array
-                    lengte_geschiedenis += 1;
+                    int lengte_geschiedenis_niew = lengte_geschiedenis += 1;
+
 
 
                 }
