@@ -43,7 +43,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 402);
+            this.ClientSize = new System.Drawing.Size(811, 412);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Bilal\'s browser";
