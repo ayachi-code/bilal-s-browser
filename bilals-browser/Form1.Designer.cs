@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.url = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.browser = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
@@ -41,22 +41,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.url);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(812, 25);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // url
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.url.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Location = new System.Drawing.Point(212, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(462, 22);
-            this.textBox1.TabIndex = 0;
+            this.url.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.url.Location = new System.Drawing.Point(212, 2);
+            this.url.Name = "url";
+            this.url.Size = new System.Drawing.Size(462, 22);
+            this.url.TabIndex = 0;
+            this.url.Text = "http://";
             // 
             // button1
             // 
@@ -96,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox url;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.WebBrowser browser;
     }
