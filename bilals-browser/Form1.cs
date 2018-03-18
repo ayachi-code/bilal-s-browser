@@ -92,8 +92,21 @@ namespace bilals_browser
 
         //Als docuemnt geladen is...
         private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {          
+        {
+            //Als teller geschiedenis is kleinder dan nul dus eerste tab
+            if (teller_geschiedenis <= 0)
+            {
+                //maak link uit
+                links.Enabled = false;
+            } else
+            {
+                //Maak de link aan
+                links.Enabled = true;
+            }
+
+
             //Console.WriteLine("geladen");
+            Console.WriteLine(teller_geschiedenis);
    
             //Loopt door alle ellementen met een a tag
             foreach (HtmlElement a in browser.Document.GetElementsByTagName("a"))
@@ -113,18 +126,24 @@ namespace bilals_browser
         //Als link knop word gelikt calback
         private void links_Click(object sender, EventArgs e)
         { 
-           
-            //vorige teller getal
-            teller_geschiedenis = teller_geschiedenis-1;
-            //Gaat een getal terug en opend de windows dan met teller_geschiedenis
-            browser.Navigate(geschiedenis[teller_geschiedenis]);
+            
+            
+           //vorige teller getal
+           teller_geschiedenis = teller_geschiedenis - 1;
+           //Gaat een getal terug en opend de windows dan met teller_geschiedenis
+           browser.Navigate(geschiedenis[teller_geschiedenis]);
+            
+            
           
         }
 
         //Voren knop calback
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //volgende teller getal
+            teller_geschiedenis = teller_geschiedenis + 1;
+            //Gaat een getal terug en opend de windows dan met teller_geschiedenis
+            browser.Navigate(geschiedenis[teller_geschiedenis]);
         }
     }
 }
