@@ -47,12 +47,30 @@ namespace bilals_browser
                     
                 }
             }
+
+          //Als iemand opzoek: wie heeft deze browser gemaakt: dan krijgt de client een message
+          if (url.Text == "wie heeft deze browser gemaakt")
+            {
+                browser.Navigate("https://google.com");
+                MessageBox.Show("Bilal el Ayachi");
+                url.Text = "";
+
+            }
+
+
         }
 
         //Als docuemnt geladen is...
         private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             Console.WriteLine("geladen");
+            //Loopt door alle ellementen met een a tag
+            foreach(HtmlElement a in browser.Document.GetElementsByTagName("a"))
+            {
+                //Geeft het een blauw kleur
+                a.Style = "color:blue";
+                   
+            }
         }
     }
 }
