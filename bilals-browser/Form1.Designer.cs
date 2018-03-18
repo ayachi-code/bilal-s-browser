@@ -79,6 +79,7 @@
             this.browser.Name = "browser";
             this.browser.Size = new System.Drawing.Size(812, 368);
             this.browser.TabIndex = 1;
+            this.browser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.browser_DocumentCompleted);
             // 
             // Form1
             // 

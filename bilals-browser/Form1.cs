@@ -37,15 +37,22 @@ namespace bilals_browser
                     browser.ScriptErrorsSuppressed = true;
                     //Navigeer daar na toe
                     browser.Navigate(url_niewe);
-      
+                
                 }
                 else {
                     //Negeert error's
                     browser.ScriptErrorsSuppressed = true;
                     //navigeer naar url.Text
                     browser.Navigate(url.Text);
+                    
                 }
             }
+        }
+
+        //Als docuemnt geladen is...
+        private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+           
         }
     }
 }
