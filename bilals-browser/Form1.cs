@@ -120,5 +120,12 @@ namespace bilals_browser
             browser.Navigate(geschiedenis[teller_geschiedenis]);
           
         }
+
+        //Voren knop calback
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+ 
