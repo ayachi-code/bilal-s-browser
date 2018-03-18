@@ -72,5 +72,11 @@ namespace bilals_browser
                    
             }
         }
+        //Als er op opnieuw word geklikt
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //vernieuw de  huidigen pagina
+            browser.Refresh();
+        }
     }
 }
