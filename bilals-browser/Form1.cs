@@ -71,6 +71,7 @@ namespace bilals_browser
                     geschiedenis[teller_geschiedenis] = url.Text.ToString();
                     teller_geschiedenis += 1;
                     //Console.WriteLine(geschiedenis.Length);
+             
                   
                 }
             }
@@ -81,7 +82,7 @@ namespace bilals_browser
                 browser.Navigate("https://google.com");
                 MessageBox.Show("Bilal el Ayachi ");
                 url.Text = "";
-                       
+                            
             }
 
 
@@ -90,7 +91,7 @@ namespace bilals_browser
         //Als docuemnt geladen is...
         private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {          
-            Console.WriteLine("geladen");
+            //Console.WriteLine("geladen");
    
             //Loopt door alle ellementen met een a tag
             foreach (HtmlElement a in browser.Document.GetElementsByTagName("a"))
