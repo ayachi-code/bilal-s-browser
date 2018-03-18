@@ -16,5 +16,10 @@ namespace bilals_browser
         {
             InitializeComponent();
         }
+
+        private void url_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.url.Size = new System.Drawing.Size(462, 22);
             this.url.TabIndex = 0;
             this.url.Text = "http://";
+            this.url.TextChanged += new System.EventHandler(this.url_TextChanged);
             // 
             // button1
             // 
