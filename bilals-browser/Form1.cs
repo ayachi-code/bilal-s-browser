@@ -18,6 +18,8 @@ namespace bilals_browser
         public int lengte_geschiedenis = 10;
         //Teller van de geschiedenis
         public int teller_geschiedenis = 0;
+        //Hoeveel terug
+        public int hoeveel_terug = -1;
 
         public Form1()
         {
@@ -113,6 +115,7 @@ namespace bilals_browser
         {
             //vorige index
             String vorige_geschiedenis = geschiedenis[teller_geschiedenis-1];
+            browser.Navigate(vorige_geschiedenis);
         }
     }
 }
