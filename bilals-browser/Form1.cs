@@ -27,9 +27,12 @@ namespace bilals_browser
           if (e.KeyChar == (char)ConsoleKey.Enter)
             {
                 String url_naam = url.Text;
-                if (!(url_naam.Contains("http://") || url_naam.Contains("https")))
+                if (!(url_naam.Contains("http://") || url_naam.Contains("https://")))
                 {
-                    MessageBox.Show("hooo");
+                    String url_naam_string = url_naam.ToString();
+                    String url_niewe = "http://" + url_naam_string;           
+                    browser.Navigate(url_niewe);
+      
                 }
                 else {
                     //Negeert error's
