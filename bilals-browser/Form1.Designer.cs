@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(784, 27);
+            this.panel1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 402);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Bilal\'s browser";
             this.ResumeLayout(false);
@@ -42,6 +52,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
