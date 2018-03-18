@@ -16,6 +16,8 @@ namespace bilals_browser
         public String[] geschiedenis;
         //Lengte van array
         public int lengte_geschiedenis = 10;
+        //Teller van de geschiedenis
+        public int teller_geschiedenis = 0;
 
         public Form1()
         {
@@ -24,7 +26,8 @@ namespace bilals_browser
             //Geschiedenis word 10 lang
             geschiedenis = new String[lengte_geschiedenis];
             //Begin value van array geschiedenis
-            geschiedenis[0] = "https://google.com";
+            geschiedenis[teller_geschiedenis] = "https://google.com";
+            Console.WriteLine(geschiedenis[0]);
             
         }
 
