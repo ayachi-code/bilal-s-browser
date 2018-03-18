@@ -22,7 +22,10 @@ namespace bilals_browser
             InitializeComponent();
             browser.Navigate("https://google.com");
             //Geschiedenis word 10 lang
-            geschiedenis = new String[lengte_geschiedenis];               
+            geschiedenis = new String[lengte_geschiedenis];
+            //Begin value van array geschiedenis
+            geschiedenis[0] = "https://google.com";
+            
         }
 
 
