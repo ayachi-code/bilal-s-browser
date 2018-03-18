@@ -52,7 +52,7 @@ namespace bilals_browser
         //Als docuemnt geladen is...
         private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-           
+            Console.WriteLine("geladen");
         }
     }
 }
