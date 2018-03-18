@@ -54,9 +54,9 @@ namespace bilals_browser
                     //Array geschiedenis word gerisized naar lengte_geschiedenis_nieuwe
                     Array.Resize<string>(ref geschiedenis, lengte_geschiedenis_niew);
                     //plus 1 bij de geschiedenus en een extra value('geschiedenis')
-                    //geschiedenis[teller_geschiedenis] = url_niewe;
+                    geschiedenis[teller_geschiedenis] = url_niewe;
                     teller_geschiedenis += 1;
-                    Console.WriteLine(geschiedenis.Length);
+                    
 
 
 
@@ -68,9 +68,9 @@ namespace bilals_browser
                     //navigeer naar url.Text
                     browser.Navigate(url.Text);
                     //plus 1 bij de geschiedenus en een extra value('geschiedenis')
-                    //geschiedenis[teller_geschiedenis] = url.Text.ToString();
+                    geschiedenis[teller_geschiedenis] = url.Text.ToString();
                     teller_geschiedenis += 1;
-                    Console.WriteLine(geschiedenis.Length);
+                    //Console.WriteLine(geschiedenis.Length);
                   
                 }
             }
