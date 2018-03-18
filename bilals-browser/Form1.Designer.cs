@@ -72,10 +72,10 @@
             this.browser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.browser.Location = new System.Drawing.Point(1, 23);
+            this.browser.Location = new System.Drawing.Point(1, 56);
             this.browser.MinimumSize = new System.Drawing.Size(20, 20);
             this.browser.Name = "browser";
-            this.browser.Size = new System.Drawing.Size(812, 401);
+            this.browser.Size = new System.Drawing.Size(812, 368);
             this.browser.TabIndex = 1;
             // 
             // Form1
