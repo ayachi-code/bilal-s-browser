@@ -94,6 +94,7 @@
             this.links.TabIndex = 2;
             this.links.Text = "⬅";
             this.links.UseVisualStyleBackColor = true;
+            this.links.Click += new System.EventHandler(this.links_Click);
             // 
             // button2
             // 

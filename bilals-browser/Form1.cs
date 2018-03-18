@@ -107,5 +107,11 @@ namespace bilals_browser
             //vernieuw de  huidigen pagina
             browser.Refresh();
         }
+
+        //Als link knop word gelikt calback
+        private void links_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
