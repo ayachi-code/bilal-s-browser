@@ -26,6 +26,8 @@ namespace bilals_browser
           //Als iemand enter klikt
           if (e.KeyChar == (char)ConsoleKey.Enter)
             {
+                String url_naam = url.Text;
+
                 //Negeert error's
                 browser.ScriptErrorsSuppressed = true;
                 browser.Navigate(url.Text);
