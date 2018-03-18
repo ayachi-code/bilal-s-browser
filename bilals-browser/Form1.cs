@@ -18,11 +18,9 @@ namespace bilals_browser
         public int lengte_geschiedenis = 10;
         //Teller van de geschiedenis
         public int teller_geschiedenis = 0;
-        //Hoeveel terug
-        public int hoeveel_terug = -1;
-        //Boolean die weet als het eerste keer is
-        public bool eerste_keer = true;
-
+        //test
+        public int h = 0;
+  
         public Form1()
         {
             InitializeComponent();
@@ -114,11 +112,13 @@ namespace bilals_browser
 
         //Als link knop word gelikt calback
         private void links_Click(object sender, EventArgs e)
-        {
-             
-            //vorige index
-            String vorige_geschiedenis = geschiedenis[teller_geschiedenis-1];
-            browser.Navigate(vorige_geschiedenis);
+        { 
+           
+            //vorige teller getal
+            teller_geschiedenis = teller_geschiedenis-1;
+            //Gaat een getal terug en opend de windows dan met teller_geschiedenis
+            browser.Navigate(geschiedenis[teller_geschiedenis]);
+          
         }
     }
 }
