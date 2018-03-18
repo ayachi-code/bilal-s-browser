@@ -12,14 +12,16 @@ namespace bilals_browser
 {
     public partial class Form1 : Form
     {
+        
+
         public Form1()
         {
             InitializeComponent();
             browser.Navigate("https://google.com");
         }
 
+        public String[] geschiedenis = { "https://google.com" };
 
-     
         //Calback van een enter op de url balk
         private void url_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -52,7 +54,7 @@ namespace bilals_browser
           if (url.Text == "wie heeft deze browser gemaakt")
             {
                 browser.Navigate("https://google.com");
-                MessageBox.Show("Bilal el Ayachi");
+                MessageBox.Show("Bilal el Ayachi ");
                 url.Text = "";
 
             }
