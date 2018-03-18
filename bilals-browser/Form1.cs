@@ -27,8 +27,7 @@ namespace bilals_browser
             geschiedenis = new String[lengte_geschiedenis];
             //Begin value van array geschiedenis
             geschiedenis[teller_geschiedenis] = "https://google.com";
-            Console.WriteLine(geschiedenis[0]);
-            
+            teller_geschiedenis += 1;          
         }
 
 
