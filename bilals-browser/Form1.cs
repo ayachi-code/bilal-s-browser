@@ -12,15 +12,16 @@ namespace bilals_browser
 {
     public partial class Form1 : Form
     {
-        
+
+        public String[] geschiedenis;
 
         public Form1()
         {
             InitializeComponent();
             browser.Navigate("https://google.com");
+            geschiedenis = new String[10];               
         }
 
-        public String[] geschiedenis = { "https://google.com" };
 
         //Calback van een enter op de url balk
         private void url_KeyPress(object sender, KeyPressEventArgs e)
@@ -56,7 +57,7 @@ namespace bilals_browser
                 browser.Navigate("https://google.com");
                 MessageBox.Show("Bilal el Ayachi ");
                 url.Text = "";
-
+                       
             }
 
 
@@ -64,10 +65,11 @@ namespace bilals_browser
 
         //Als docuemnt geladen is...
         private void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
+        {          
             Console.WriteLine("geladen");
+   
             //Loopt door alle ellementen met een a tag
-            foreach(HtmlElement a in browser.Document.GetElementsByTagName("a"))
+            foreach (HtmlElement a in browser.Document.GetElementsByTagName("a"))
             {
                 //Geeft het een blauw kleur
                 a.Style = "color:blue";
