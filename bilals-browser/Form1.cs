@@ -12,14 +12,17 @@ namespace bilals_browser
 {
     public partial class Form1 : Form
     {
-
+        //Array geschiedenis
         public String[] geschiedenis;
+        //Lengte van array
+        public int lengte_geschiedenis = 10;
 
         public Form1()
         {
             InitializeComponent();
             browser.Navigate("https://google.com");
-            geschiedenis = new String[10];               
+            //Geschiedenis word 10 lang
+            geschiedenis = new String[lengte_geschiedenis];               
         }
 
 
@@ -40,7 +43,7 @@ namespace bilals_browser
                     browser.ScriptErrorsSuppressed = true;
                     //Navigeer daar na toe
                     browser.Navigate(url_niewe);
-                
+                               
                 }
                 else {
                     //Negeert error's
