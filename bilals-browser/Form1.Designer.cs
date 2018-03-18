@@ -33,6 +33,7 @@
             this.url = new System.Windows.Forms.TextBox();
             this.browser = new System.Windows.Forms.WebBrowser();
             this.links = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,6 +42,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.links);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.url);
@@ -93,6 +95,15 @@
             this.links.Text = "⬅";
             this.links.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(47, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "→";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -115,6 +126,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.WebBrowser browser;
         private System.Windows.Forms.Button links;
+        private System.Windows.Forms.Button button2;
     }
 }
 
