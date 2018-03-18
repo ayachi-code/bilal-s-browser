@@ -18,9 +18,7 @@ namespace bilals_browser
         public int lengte_geschiedenis = 10;
         //Teller van de geschiedenis
         public int teller_geschiedenis = 0;
-        //test
-        public int h = 0;
-  
+       
         public Form1()
         {
             InitializeComponent();
@@ -56,6 +54,7 @@ namespace bilals_browser
                     //plus 1 bij de geschiedenus en een extra value('geschiedenis')
                     teller_geschiedenis += 1;
                     geschiedenis[teller_geschiedenis] = url_niewe;
+                    a = true;
                     
                     
 
@@ -71,10 +70,11 @@ namespace bilals_browser
                     //plus 1 bij de geschiedenus en een extra value('geschiedenis')
                     teller_geschiedenis += 1;
                     geschiedenis[teller_geschiedenis] = url.Text.ToString();
-                    
+
                     //Console.WriteLine(geschiedenis.Length);
-             
-                  
+                    a = true;
+
+
                 }
             }
 
@@ -97,14 +97,13 @@ namespace bilals_browser
             if (teller_geschiedenis <= 0)
             {
                 //maak link uit
-                links.Enabled = false;
+                links.Enabled = false;         
             } else
             {
                 //Maak de link aan
                 links.Enabled = true;
             }
-
-
+   
             //Console.WriteLine("geladen");
             Console.WriteLine(teller_geschiedenis);
    
