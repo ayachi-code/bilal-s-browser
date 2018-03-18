@@ -1,1 +1,9 @@
 c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\bin\Debug\bilals-browser.exe.config
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\bin\Debug\bilals-browser.exe
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\bin\Debug\bilals-browser.pdb
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.csprojResolveAssemblyReference.cache
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals_browser.Form1.resources
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals_browser.Properties.Resources.resources
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.csproj.GenerateResource.Cache
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.exe
+c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.pdb
