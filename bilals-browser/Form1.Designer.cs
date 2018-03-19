@@ -115,6 +115,7 @@
             this.geschiedenis_bekijken.TabIndex = 2;
             this.geschiedenis_bekijken.Text = "geschiedenis";
             this.geschiedenis_bekijken.UseVisualStyleBackColor = true;
+            this.geschiedenis_bekijken.Click += new System.EventHandler(this.geschiedenis_bekijken_Click);
             // 
             // Form1
             // 

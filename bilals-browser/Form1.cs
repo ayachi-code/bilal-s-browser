@@ -139,6 +139,12 @@ namespace bilals_browser
             //Gaat een getal terug en opend de windows dan met teller_geschiedenis
             browser.Navigate(geschiedenis[teller_geschiedenis]);
         }
+
+        //Als geschiedenis word geklikts
+        private void geschiedenis_bekijken_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  
