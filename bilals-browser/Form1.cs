@@ -143,7 +143,10 @@ namespace bilals_browser
         //Als geschiedenis word geklikts
         private void geschiedenis_bekijken_Click(object sender, EventArgs e)
         {
-
+            //geschiedenis_pagina is gelijk aan een constructor 
+            Form2 geschiedenis_pagina = new Form2();
+            //Laat volgende pagina zien :)
+            geschiedenis_pagina.ShowDialog();
         }
     }
 }
