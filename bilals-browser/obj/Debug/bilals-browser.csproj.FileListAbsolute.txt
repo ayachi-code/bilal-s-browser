@@ -7,3 +7,4 @@ c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-brows
 c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.csproj.GenerateResource.Cache
 c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.exe
 c:\users\bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals-browser.pdb
+C:\Users\Bilal\documents\visual studio 2015\Projects\bilals-browser\bilals-browser\obj\Debug\bilals_browser.geschiedenispagina.resources

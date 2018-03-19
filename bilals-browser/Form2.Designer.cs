@@ -1,6 +1,6 @@
 ﻿namespace bilals_browser
 {
-    partial class Form2
+    partial class geschiedenispagina
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // geschiedenispagina
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(991, 496);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1009, 543);
+            this.Name = "geschiedenispagina";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = "Geschiedenis";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

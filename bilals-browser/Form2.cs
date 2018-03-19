@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bilals_browser
 {
-    public partial class Form2 : Form
+    public partial class geschiedenispagina : Form
     {
-        public Form2()
+        public geschiedenispagina()
         {
             InitializeComponent();
         }

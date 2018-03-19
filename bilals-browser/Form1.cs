@@ -144,7 +144,7 @@ namespace bilals_browser
         private void geschiedenis_bekijken_Click(object sender, EventArgs e)
         {
             //geschiedenis_pagina is gelijk aan een constructor 
-            Form2 geschiedenis_pagina = new Form2();
+            geschiedenispagina geschiedenis_pagina = new geschiedenispagina();
             //Laat volgende pagina zien :)
             geschiedenis_pagina.ShowDialog();
         }
