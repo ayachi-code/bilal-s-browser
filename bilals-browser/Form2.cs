@@ -16,5 +16,11 @@ namespace bilals_browser
         {
             InitializeComponent();
         }
+
+        //Als pagina is geladen
+        private void geschiedenispagina_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine("is geladen ");
+        }
     }
 }

@@ -41,6 +41,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Geschiedenis";
+            this.Load += new System.EventHandler(this.geschiedenispagina_Load);
             this.ResumeLayout(false);
 
         }
