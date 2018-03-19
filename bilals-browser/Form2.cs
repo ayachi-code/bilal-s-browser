@@ -29,5 +29,11 @@ namespace bilals_browser
                 Console.WriteLine(gs);
             }
         }
+
+        //Als terug word geklikt ook wel een callback
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
