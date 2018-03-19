@@ -23,6 +23,7 @@ namespace bilals_browser
         //Als pagina is geladen
         private void geschiedenispagina_Load(object sender, EventArgs e)
         {
+            //Loopt door lijst gs
             foreach(String gs in geschiedenis_array)
             {
                 Console.WriteLine(gs);
