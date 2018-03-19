@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rechts = new System.Windows.Forms.Button();
+            this.links = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.url = new System.Windows.Forms.TextBox();
             this.browser = new System.Windows.Forms.WebBrowser();
-            this.links = new System.Windows.Forms.Button();
-            this.rechts = new System.Windows.Forms.Button();
+            this.geschiedenis_bekijken = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(812, 25);
             this.panel1.TabIndex = 0;
+            // 
+            // rechts
+            // 
+            this.rechts.Location = new System.Drawing.Point(47, 1);
+            this.rechts.Name = "rechts";
+            this.rechts.Size = new System.Drawing.Size(37, 23);
+            this.rechts.TabIndex = 3;
+            this.rechts.Text = "→";
+            this.rechts.UseVisualStyleBackColor = true;
+            this.rechts.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // links
+            // 
+            this.links.Location = new System.Drawing.Point(4, 1);
+            this.links.Name = "links";
+            this.links.Size = new System.Drawing.Size(37, 23);
+            this.links.TabIndex = 2;
+            this.links.Text = "⬅";
+            this.links.UseVisualStyleBackColor = true;
+            this.links.Click += new System.EventHandler(this.links_Click);
             // 
             // button1
             // 
@@ -86,31 +107,21 @@
             this.browser.TabIndex = 1;
             this.browser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.browser_DocumentCompleted);
             // 
-            // links
+            // geschiedenis_bekijken
             // 
-            this.links.Location = new System.Drawing.Point(4, 1);
-            this.links.Name = "links";
-            this.links.Size = new System.Drawing.Size(37, 23);
-            this.links.TabIndex = 2;
-            this.links.Text = "⬅";
-            this.links.UseVisualStyleBackColor = true;
-            this.links.Click += new System.EventHandler(this.links_Click);
-            // 
-            // rechts
-            // 
-            this.rechts.Location = new System.Drawing.Point(47, 1);
-            this.rechts.Name = "rechts";
-            this.rechts.Size = new System.Drawing.Size(37, 23);
-            this.rechts.TabIndex = 3;
-            this.rechts.Text = "→";
-            this.rechts.UseVisualStyleBackColor = true;
-            this.rechts.Click += new System.EventHandler(this.button2_Click);
+            this.geschiedenis_bekijken.Location = new System.Drawing.Point(12, 31);
+            this.geschiedenis_bekijken.Name = "geschiedenis_bekijken";
+            this.geschiedenis_bekijken.Size = new System.Drawing.Size(101, 23);
+            this.geschiedenis_bekijken.TabIndex = 2;
+            this.geschiedenis_bekijken.Text = "geschiedenis";
+            this.geschiedenis_bekijken.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 412);
+            this.Controls.Add(this.geschiedenis_bekijken);
             this.Controls.Add(this.browser);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -129,6 +140,7 @@
         private System.Windows.Forms.WebBrowser browser;
         private System.Windows.Forms.Button links;
         private System.Windows.Forms.Button rechts;
+        private System.Windows.Forms.Button geschiedenis_bekijken;
     }
 }
 

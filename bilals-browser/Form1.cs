@@ -54,13 +54,9 @@ namespace bilals_browser
                     //plus 1 bij de geschiedenus en een extra value('geschiedenis')
                     teller_geschiedenis += 1;
                     geschiedenis[teller_geschiedenis] = url_niewe;
-                    a = true;
+            
                     
-                    
-
-
-
-
+                
                 }
                 else {
                     //Negeert error's
@@ -72,8 +68,7 @@ namespace bilals_browser
                     geschiedenis[teller_geschiedenis] = url.Text.ToString();
 
                     //Console.WriteLine(geschiedenis.Length);
-                    a = true;
-
+                   
 
                 }
             }
